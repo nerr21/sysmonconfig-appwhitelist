@@ -2221,8 +2221,8 @@
         <QueryName condition="end with">.pubmatic.com</QueryName>
         <QueryName condition="end with">.quantcount.com</QueryName>
         <QueryName condition="end with">.quantserve.com</QueryName>
-		<QueryName condition="end with">.rebisco.com</QueryName>
-		<QueryName condition="end with">.rebisco.com.ph</QueryName>
+	<QueryName condition="end with">.rebisco.com</QueryName>
+	<QueryName condition="end with">.rebisco.com.ph</QueryName>
         <QueryName condition="end with">.revsci.net</QueryName>
         <QueryName condition="end with">.rfihub.net</QueryName>
         <QueryName condition="end with">.rlcdn.com</QueryName>
@@ -2250,8 +2250,8 @@
         <QueryName condition="end with">.ytimg.com</QueryName>
         <QueryName condition="end with">.zorosrv.com</QueryName>
         <QueryName condition="is">1rx.io</QueryName>
-		<QueryName condition="is">rebisco.com</QueryName>
-		<QueryName condition="is">rebisco.com.ph</QueryName>
+	<QueryName condition="is">rebisco.com</QueryName>
+	<QueryName condition="is">rebisco.com.ph</QueryName>
         <QueryName condition="is">adservice.google.com</QueryName>
         <QueryName condition="is">ampcid.google.com</QueryName>
         <QueryName condition="is">clientservices.googleapis.com</QueryName>
@@ -2289,9 +2289,9 @@
         <QueryName condition="end with">.localmachine</QueryName>
         <QueryName condition="is">localhost</QueryName>
         <Rule groupRelation="and">
-          <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</Image>
-          <QueryName condition="end with">.msftconnecttest.com</QueryName>
-		  <QueryName condition="end with">.kaspersky.com</QueryName>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</Image>
+        <QueryName condition="end with">.msftconnecttest.com</QueryName>
+	<QueryName condition="end with">.kaspersky.com</QueryName>
         </Rule>
         <Image condition="is">C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe</Image>
         <QueryName condition="end with">-pushp.svc.ms</QueryName>
@@ -2354,8 +2354,7 @@
         <QueryName condition="is">cscasha2.ocsp-certum.com</QueryName>
         <QueryName condition="is">crl.verisign.com</QueryName>
         <Image condition="contains all"> C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\klnagent.exe</Image>
-        <QueryName condition="end with">.spotify.com</QueryName>
-        <QueryName condition="end with">.spotify.map.fastly.net</QueryName>
+        <QueryName condition="end with">.rebisco.com</QueryName>
         <Image condition="contains all">C:\Windows\SystemApps\Microsoft.Windows.Search;SearchApp.exe</Image>
       </DnsQuery>
     </RuleGroup>
