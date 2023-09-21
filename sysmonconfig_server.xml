@@ -2353,7 +2353,7 @@
         <QueryName condition="is">subca.ocsp-certum.com</QueryName>
         <QueryName condition="is">cscasha2.ocsp-certum.com</QueryName>
         <QueryName condition="is">crl.verisign.com</QueryName>
-        <Image condition="contains all">C:\Program Files\SentinelOne\Sentinel Agent;\SentinelAgent.exe</Image>
+        <Image condition="contains all"> C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\klnagent.exe</Image>
         <QueryName condition="end with">.spotify.com</QueryName>
         <QueryName condition="end with">.spotify.map.fastly.net</QueryName>
         <Image condition="contains all">C:\Windows\SystemApps\Microsoft.Windows.Search;SearchApp.exe</Image>
