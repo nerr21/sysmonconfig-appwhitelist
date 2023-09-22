@@ -1237,6 +1237,8 @@
         <SourceImage condition="is">C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\AcroCEF\AcroCEF.exe</SourceImage>
         <SourceImage condition="is">C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARMHelper.exe</SourceImage>
 		<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security for Windows Server\kavfswp.exe</SourceImage>
+		<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</SourceImage>
+		<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\klnagent.exe</SourceImage>
 		<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</SourceImage>
 		<SourceImage condition="is">C:\Windows\System32\DriverStore\FileRepository\ibmpmdrv.inf_amd64_02d728b29c6492d3\x64\ibmpmsvc.exe</SourceImage>
 		<SourceImage condition="contains all">C:\temp\VMware\vmware.exe</SourceImage>
@@ -1835,7 +1837,9 @@
     <!-- Event ID 12,13,14 == RegObject added/deleted, RegValue Set, RegObject Renamed - Excludes -->
     <RuleGroup groupRelation="or">
       <RegistryEvent onmatch="exclude">
-        <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</Image>
+        <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\klfc.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\Up2Date.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security for Windows Server\kavfswp.exe</Image>
 		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</Image>
         <Image condition="contains all">C:\Users\;\AppData\\Roaming\Zoom\bin\Zoom.exe</Image>
 		<Image condition="is">C:\Windows\System32\DriverStore\FileRepository\ibmpmdrv.inf_amd64_02d728b29c6492d3\x64\ibmpmsvc.exe</Image>
@@ -1855,10 +1859,13 @@
         <TargetObject condition="end with">ShellBrowser</TargetObject>
         <Image condition="is">C:\Program Files (x86)\Ivanti\Workspace Control\pfwsmgr.exe</Image>
         <Image condition="is">C:\Program Files\RES Software\Workspace Manager\pfwsmgr.exe</Image>
-        <Image condition="begin with">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Internet Security </Image>
-        <Image condition="begin with">C:\Program Files\Kaspersky Lab\Kaspersky Internet Security </Image>
+        <Image condition="begin with">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center </Image>
+        <Image condition="begin with">C:\Program Files\Kaspersky Lab\KES.12.1.0 </Image>
+		<Image condition="begin with">C:\Program Files\Kaspersky Lab\NetworkAgent </Image>
         <Image condition="is">C:\Program Files\McAfee\Endpoint Encryption Agent\MfeEpeHost.exe</Image>
-        <Image condition="is">C:\Program Files\McAfee\Endpoint Security\Adaptive Threat Protection\mfeatp.exe</Image>
+        <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\klfc.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\Up2Date.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security for Windows Server\kavfswp.exe</Image>
         <Image condition="is">C:\Program Files\McAfee\Endpoint Security\Endpoint Security Platform\mfeesp.exe</Image>
         <Image condition="is">C:\Program Files\Common Files\McAfee\Engine\AMCoreUpdater\amupdate.exe</Image>
         <Image condition="is">C:\Program Files\McAfee\Agent\masvc.exe</Image>
@@ -2354,6 +2361,9 @@
         <QueryName condition="is">cscasha2.ocsp-certum.com</QueryName>
         <QueryName condition="is">crl.verisign.com</QueryName>
         <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\klnagent.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\klfc.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\Up2Date.exe</Image>
         <Image condition="contains all">C:\Windows\SystemApps\Microsoft.Windows.Search;SearchApp.exe</Image>
       </DnsQuery>
     </RuleGroup>
