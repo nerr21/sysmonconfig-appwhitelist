@@ -2356,6 +2356,7 @@
         <QueryName condition="is">crl.verisign.com</QueryName>
         <Image condition="contains all"> C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\klnagent.exe</Image>
         <QueryName condition="end with">.rebisco.com</QueryName>
+	<QueryName condition="end with">.localmachine</QueryName>
         <Image condition="contains all">C:\Windows\SystemApps\Microsoft.Windows.Search;SearchApp.exe</Image>
       </DnsQuery>
     </RuleGroup>
