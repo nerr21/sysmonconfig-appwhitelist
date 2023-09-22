@@ -2289,9 +2289,10 @@
         <QueryName condition="end with">.localmachine</QueryName>
         <QueryName condition="is">localhost</QueryName>
         <Rule groupRelation="and">
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security for Windows Server\kavfswp.exe</Image>
         <QueryName condition="end with">.msftconnecttest.com</QueryName>
 	<QueryName condition="end with">.kaspersky.com</QueryName>
+	<QueryName condition="end with">.localmachine/QueryName>
         </Rule>
         <Image condition="is">C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe</Image>
         <QueryName condition="end with">-pushp.svc.ms</QueryName>
