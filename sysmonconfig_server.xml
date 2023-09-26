@@ -514,22 +514,10 @@
         <Image condition="begin with">C:\Program Files\NVIDIA Corporation\</Image>
         <Image condition="begin with">C:\Program Files\Realtek\</Image>
         <ParentImage condition="end with">C:\Program Files\Realtek\Audio\HDA\RtkAudioService64.exe</ParentImage>
-        <Image condition="end with">C:\Program Files (x86)\Dropbox\Update\DropboxUpdate.exe</Image>
-        <ParentImage condition="end with">C:\Program Files (x86)\Dropbox\Update\DropboxUpdate.exe</ParentImage>
-        <Image condition="is">C:\Program Files\ESET\ESET Nod32 Antivirus\ekrn.exe</Image>
         <CommandLine condition="begin with">"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --type=</CommandLine>
         <CommandLine condition="begin with">"C:\Program Files\Google\Chrome\Application\chrome.exe" --type=</CommandLine>
         <Image condition="begin with">C:\Program Files (x86)\Google\Update\</Image>
         <ParentImage condition="begin with">C:\Program Files (x86)\Google\Update\</ParentImage>
-        <ParentImage condition="is">C:\Program Files (x86)\RES Software\Workspace Manager\pfwsmgr.exe</ParentImage>
-        <ParentImage condition="is">C:\Program Files (x86)\RES Software\Workspace Manager\respesvc64.exe</ParentImage>
-        <ParentImage condition="is">C:\Program Files (x86)\Ivanti\Workspace Control\pfwsmgr.exe</ParentImage>
-        <ParentImage condition="is">C:\Program Files (x86)\RES Software\Workspace Manager\ResPesvc64.exe</ParentImage>
-        <ParentImage condition="is">C:\Program Files\RES Software\Workspace Manager\respesvc.exe</ParentImage>
-        <ParentImage condition="is">C:\Program Files\Ivanti\Workspace Control\ResPesvc.exe</ParentImage>
-        <Image condition="is">C:\Program Files\Malwarebytes\Anti-Malware\mbam.exe</Image>
-        <Image condition="is">C:\Program Files\Malwarebytes\Anti-Malware\mbamservice.exe</Image>
-        <Image condition="is">C:\Program Files\Malwarebytes\Anti-Malware\mbamtray.exe</Image>
         <Image condition="is">C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe</Image>
         <ParentImage condition="end with">C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe</ParentImage>
         <ParentImage condition="is">C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe</ParentImage>
@@ -538,25 +526,6 @@
         <CommandLine condition="begin with">"C:\Program Files\Mozilla Firefox\plugin-container.exe" --channel</CommandLine>
         <CommandLine condition="begin with">"C:\Program Files (x86)\Mozilla Firefox\plugin-container.exe" --channel</CommandLine>
         <Image condition="contains all"> C:\Users\;\AppData\Local\Microsoft\OneDrive;\FileCoAuth.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Sophos\Sophos Anti-Virus\Web Intelligence\swi_service.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Sophos\Sophos Anti-Virus\Web Control\swc_service.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Sophos\Sophos System Protection\ssp.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Sophos\Remote Management System\RouterNT.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Sophos\AutoUpdate\ALsvc.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Sophos\Sophos Anti-Virus\SAVAdminService.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Sophos\Remote Management System\ManagementAgentNT.exe</Image>
-        <Image condition="begin with">C:\Program Files\Splunk\bin\</Image>
-        <ParentImage condition="is">C:\Program Files\Splunk\bin\splunkd.exe</ParentImage>
-        <ParentImage condition="is">C:\Program Files\Splunk\bin\splunk.exe</ParentImage>
-        <Image condition="begin with">D:\Program Files\Splunk\bin\</Image>
-        <ParentImage condition="is">D:\Program Files\Splunk\bin\splunkd.exe</ParentImage>
-        <ParentImage condition="is">D:\Program Files\Splunk\bin\splunk.exe</ParentImage>
-        <Image condition="begin with">C:\Program Files\SplunkUniversalForwarder\bin\</Image>
-        <ParentImage condition="is">C:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe</ParentImage>
-        <ParentImage condition="is">C:\Program Files\SplunkUniversalForwarder\bin\splunk.exe</ParentImage>
-        <Image condition="begin with">D:\Program Files\SplunkUniversalForwarder\bin\</Image>
-        <ParentImage condition="is">D:\Program Files\SplunkUniversalForwarder\bin\splunkd.exe</ParentImage>
-        <ParentImage condition="is">D:\Program Files\SplunkUniversalForwarder\bin\splunk.exe</ParentImage>
         <CommandLine condition="is">C:\Windows\system32\svchost.exe -k appmodel -s StateRepository</CommandLine>
         <CommandLine condition="is">C:\Windows\system32\svchost.exe -k appmodel</CommandLine>
         <CommandLine condition="is">C:\WINDOWS\system32\svchost.exe -k appmodel -p -s tiledatamodelsvc</CommandLine>
@@ -622,15 +591,10 @@
         <CommandLine condition="is">C:\Windows\system32\svchost.exe -k wsappx</CommandLine>
         <ParentCommandLine condition="is">C:\Windows\system32\svchost.exe -k netsvcs</ParentCommandLine>
         <ParentCommandLine condition="is">C:\Windows\system32\svchost.exe -k localSystemNetworkRestricted</ParentCommandLine>
-        <Image condition="is">C:\Program Files\Trend Micro\Deep Security Agent\ds_monitor.exe</Image>
-        <Image condition="is">C:\Program Files\Trend Micro\Deep Security Agent\dsa.exe</Image>
-        <Image condition="is">C:\Program Files\Trend Micro\Deep Security Agent\dsuam.exe</Image>
-        <Image condition="is">C:\Program Files\Trend Micro\Deep Security Agent\Notifier.exe</Image>
-        <Image condition="is">C:\Program Files\Trend Micro\Deep Security Agent\lib\Patch.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Trend Micro\BM\TMBMSRV.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Trend Micro\OfficeScan Client\TmopExtIns32.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Trend Micro\OfficeScan Client\TmExtIns.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Trend Micro\OfficeScan Client\TmListen.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\Up2Date.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\klfc.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\vapm.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security for Windows Server\kavfswp.exe</Image>
         <Image condition="begin with">C:\Program Files\Windows Defender\</Image>
         <Image condition="is">C:\Windows\system32\MpSigStub.exe</Image>
         <Image condition="begin with">C:\Windows\SoftwareDistribution\Download\Install\AM_</Image>
@@ -2120,6 +2084,30 @@
           <Image condition="contains all">C:\Program Files;\Mozilla Firefox\firefox.exe</Image>
           <PipeName condition="begin with">\gecko-crash-server-pipe.</PipeName>
         </Rule>
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\vapm.exe</Image>
+          <PipeName condition="begin with">\kscipc</PipeName>
+        </Rule>
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\klfc.exe</Image>
+          <PipeName condition="begin with">\kscipc</PipeName>
+        </Rule>
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\Kaspersky Security Center\Up2Date.exe</Image>
+          <PipeName condition="begin with">\kscipc</PipeName>
+        </Rule>
+				<Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\ksnproxy.exe</Image>
+          <PipeName condition="begin with">\kscipc</PipeName>
+        </Rule>
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klcsldcl.exe</Image>
+          <PipeName condition="begin with">\kscipc</PipeName>
+        </Rule>
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\Up2Date.exe</Image>
+          <PipeName condition="begin with">\kscipc</PipeName>
+        </Rule>
         <PipeName condition="is">\SQLLocal\MSSQLSERVER</PipeName>
         <PipeName condition="is">\SQLLocal\INSTANCE01</PipeName>
         <PipeName condition="is">\SQLLocal\SQLEXPRESS</PipeName>
@@ -2130,26 +2118,6 @@
         <Image condition="is">Program Files (x86)\Microsoft SQL Server\110\DTS\binn\dtexec.exe</Image>
         <Image condition="end with">PostgreSQL\9.6\bin\postgres.exe</Image>
         <PipeName condition="contains">\pgsignal_</PipeName>
-        <Image condition="is">Program Files\Qlik\Sense\Engine\Engine.exe</Image>
-        <Image condition="contains all">C:\Program Files;\Qualys\QualysAgent\QualysAgent.exe</Image>
-        <Image condition="end with">Program Files\SplunkUniversalForwarder\bin\splunkd.exe</Image>
-        <Image condition="end with">Program Files\SplunkUniversalForwarder\bin\splunk.exe</Image>
-        <Image condition="end with">Program Files\SplunkUniversalForwarder\bin\splunk-MonitorNoHandle.exe</Image>
-        <Image condition="end with">Program Files (x86)\Trend Micro\OfficeScan\PCCSRV\CMAgent\OfcCMAgent.exe</Image>
-        <Image condition="end with">Program Files (x86)\Trend Micro\OfficeScan\PCCSRV\web\service\ofcservice.exe</Image>
-        <Image condition="end with">Program Files (x86)\Trend Micro\OfficeScan\PCCSRV\Web\Service\DbServer.exe</Image>
-        <Image condition="end with">Program Files (x86)\Trend Micro\OfficeScan\PCCSRV\web\service\verconn.exe</Image>
-        <Image condition="end with">Program Files (x86)\Trend Micro\OfficeScan\PCCSRV\WEB_OSCE\WEB\CGI\cgiOnClose.exe</Image>
-        <Image condition="end with">Program Files (x86)\Trend Micro\OfficeScan\PCCSRV\WEB_OSCE\WEB\CGI\cgiRqHotFix.exe</Image>
-        <Image condition="end with">Program Files (x86)\Trend Micro\OfficeScan\PCCSRV\LWCS\LWCSService.exe</Image>
-        <Image condition="end with">Program Files (x86)\Trend Micro\OfficeScan\PCCSRV\WSS\iCRCService.exe</Image>
-        <Image condition="end with">Program Files\Trend\SPROTECT\x64\tsc.exe</Image>
-        <Image condition="end with">Program Files\Trend\SPROTECT\x64\tsc64.exe</Image>
-        <Image condition="end with">Program Files (x86)\Trend Micro\OfficeScan\PCCSRV\web\service\osceintegrationservice.exe</Image>
-        <Image condition="end with">Program Files (x86)\Trend Micro\OfficeScan\PCCSRV\web\service\OfcLogReceiverSvc.exe</Image>
-        <PipeName condition="is">\Trend Micro OSCE Command Handler Manager</PipeName>
-        <PipeName condition="is">\Trend Micro OSCE Command Handler2 Manager</PipeName>
-        <PipeName condition="is">\Trend Micro Endpoint Encryption ToolBox Command Handler Manager</PipeName>
         <PipeName condition="is">\OfcServerNamePipe</PipeName>
         <PipeName condition="is">\ntapvsrq</PipeName>
         <PipeName condition="is">\srvsvc</PipeName>
