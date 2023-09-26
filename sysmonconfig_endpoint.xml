@@ -2049,10 +2049,14 @@
           <PipeName condition="begin with">\cubeb-pipe-</PipeName>
         </Rule>
         <Rule groupRelation="and">
-          <Image condition="contains all">C:\Program Files;\Mozilla Firefox\firefox.exe</Image>
-          <PipeName condition="begin with">\chrome.</PipeName>
+          <Image condition="contains all">C:\Program Files\Mozilla Firefox\firefox.exe</Image>
+          <PipeName condition="begin with">\LOCAL\cubeb-pipe-</PipeName>
         </Rule>
-        <Rule groupRelation="and">
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Users\;\AppData\Roaming\Zoom\bin\Zoom.exe</Image>
+		  <PipeName condition="begin with">\Zoom.com.zoom.ipc.confapp_</PipeName>
+		</Rule>
+		<Rule groupRelation="and">
           <Image condition="contains all">C:\Program Files;\Mozilla Firefox\firefox.exe</Image>
           <PipeName condition="begin with">\gecko-crash-server-pipe.</PipeName>
         </Rule>
