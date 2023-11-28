@@ -595,12 +595,15 @@
         <CommandLine condition="is">C:\Windows\system32\svchost.exe -k wsappx</CommandLine>
         <ParentCommandLine condition="is">C:\Windows\system32\svchost.exe -k netsvcs</ParentCommandLine>
         <ParentCommandLine condition="is">C:\Windows\system32\svchost.exe -k localSystemNetworkRestricted</ParentCommandLine>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpui.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpsus.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avp.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avpui.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avpsus.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avp.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpui.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpsus.exe</Image>
         <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</Image>
         <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagchk.exe</Image>
-		<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klmover.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klmover.exe</Image>
         <Image condition="begin with">C:\Program Files\Windows Defender\</Image>
         <Image condition="is">C:\Windows\system32\MpSigStub.exe</Image>
         <Image condition="begin with">C:\Windows\SoftwareDistribution\Download\Install\AM_</Image>
@@ -832,15 +835,15 @@
         <Image condition="end with">AppData\Local\Viber\Viber.exe</Image>
         <Image condition="end with">winlogbeat.exe</Image>
         <Image condition="end with">packetbeat.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</Image>
-		<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpui.exe</Image>
-		<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpsus.exe</Image>
-		<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</Image>
-		<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagchk.exe</Image>
-		<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klmover.exe</Image>
-		<Image condition="contains all">C:\Users\;\AppData\Roaming\Zoom\bin\Zoom.exe</Image>
-		<Image condition="contains all">C:\Users\;\AppData\Local\Viber\Viber.exe</Image>
-		<Image condition="is">C:\Program Files (x86)\AnyDesk\AnyDesk.exe</Image>
+        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avp.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avpui.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avpsus.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagchk.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klmover.exe</Image>
+	<Image condition="contains all">C:\Users\;\AppData\Roaming\Zoom\bin\Zoom.exe</Image>
+	<Image condition="contains all">C:\Users\;\AppData\Local\Viber\Viber.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\AnyDesk\AnyDesk.exe</Image>
         <Rule groupRelation="and">
           <Image condition="is">C:\Windows\System32\lsass.exe</Image>
           <DestinationPort condition="is">88</DestinationPort>
@@ -848,7 +851,7 @@
         <Image condition="image">OneDrive.exe</Image>
         <Image condition="image">OneDriveStandaloneUpdater.exe</Image>
         <Image condition="end with">AppData\Roaming\Viber\Viber.exe</Image>
-		<Image condition="end with">AppData\Roaming\Zoom\Zoom.exe</Image>
+	<Image condition="end with">AppData\Roaming\Zoom\Zoom.exe</Image>
         <Image condition="end with">AppData\Local\SynologyDrive\SynologyDrive.app\bin\cloud-drive-ui.exe</Image>
         <Image condition="end with">AppData\Local\SynologyDrive\SynologyDrive.app\bin\cloud-drive-daemon.exe</Image>
         <DestinationHostname condition="end with">.windowsupdate.microsoft.com</DestinationHostname>
@@ -1196,13 +1199,14 @@
         <SourceImage condition="is">C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\Acrobat.exe</SourceImage>
         <SourceImage condition="is">C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\AcroCEF\AcroCEF.exe</SourceImage>
         <SourceImage condition="is">C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARMHelper.exe</SourceImage>
-		<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</SourceImage>
-		<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</SourceImage>
-		<SourceImage condition="is">C:\Windows\System32\DriverStore\FileRepository\ibmpmdrv.inf_amd64_02d728b29c6492d3\x64\ibmpmsvc.exe</SourceImage>
-		<SourceImage condition="contains all">C:\temp\VMware\vmware.exe</SourceImage>
-		<SourceImage condition="contains all">C:\temp\VMware\vmware-unity-helper.exe</SourceImage>
-		<SourceImage condition="contains all">C:\Users\;\AppData\Roaming\Zoom\bin\Zoom.exe</SourceImage>
-		<SourceImage condition="contains all">C:\Users\;\AppData\Local\Viber\Viber.exe</SourceImage>
+	<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</SourceImage>
+	<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avp.exe</SourceImage>
+	<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</SourceImage>
+	<SourceImage condition="is">C:\Windows\System32\DriverStore\FileRepository\ibmpmdrv.inf_amd64_02d728b29c6492d3\x64\ibmpmsvc.exe</SourceImage>
+	<SourceImage condition="contains all">C:\temp\VMware\vmware.exe</SourceImage>
+	<SourceImage condition="contains all">C:\temp\VMware\vmware-unity-helper.exe</SourceImage>
+	<SourceImage condition="contains all">C:\Users\;\AppData\Roaming\Zoom\bin\Zoom.exe</SourceImage>
+	<SourceImage condition="contains all">C:\Users\;\AppData\Local\Viber\Viber.exe</SourceImage>
         <Rule name="Exclude Chrome SW Reporter into Reporter" groupRelation="and">
           <SourceImage condition="image">software_reporter_tool.exe</SourceImage>
           <TargetImage condition="image">software_reporter_tool.exe</TargetImage>
@@ -1994,7 +1998,6 @@
         <Image condition="contains all">C:\Program Files;\Citrix\ICA Client\concentr.exe</Image>
         <Image condition="contains all">C:\Users\;\AppData\Local\Citrix\ICA Client\receiver\Receiver.exe</Image>
         <Image condition="contains all">C:\Users\;\AppData\Local\Citrix\ICA Client\SelfServicePlugin\SelfService.exe</Image>
-        <Image condition="contains all">C:\Program Files;\FireEye\xagt\xagt.exe</Image>
         <Rule groupRelation="and">
           <Image condition="contains all">C:\Program Files;\Google\Update\Install\;setup.exe</Image>
           <PipeName condition="begin with">\crashpad_</PipeName>
@@ -2163,8 +2166,8 @@
         <QueryName condition="end with">.pubmatic.com</QueryName>
         <QueryName condition="end with">.quantcount.com</QueryName>
         <QueryName condition="end with">.quantserve.com</QueryName>
-		<QueryName condition="end with">.rebisco.com</QueryName>
-		<QueryName condition="end with">.rebisco.com.ph</QueryName>
+	<QueryName condition="end with">.rebisco.com</QueryName>
+	<QueryName condition="end with">.rebisco.com.ph</QueryName>
         <QueryName condition="end with">.revsci.net</QueryName>
         <QueryName condition="end with">.rfihub.net</QueryName>
         <QueryName condition="end with">.rlcdn.com</QueryName>
@@ -2192,8 +2195,8 @@
         <QueryName condition="end with">.ytimg.com</QueryName>
         <QueryName condition="end with">.zorosrv.com</QueryName>
         <QueryName condition="is">1rx.io</QueryName>
-		<QueryName condition="is">rebisco.com</QueryName>
-		<QueryName condition="is">rebisco.com.ph</QueryName>
+	<QueryName condition="is">rebisco.com</QueryName>
+	<QueryName condition="is">rebisco.com.ph</QueryName>
         <QueryName condition="is">adservice.google.com</QueryName>
         <QueryName condition="is">ampcid.google.com</QueryName>
         <QueryName condition="is">clientservices.googleapis.com</QueryName>
@@ -2236,8 +2239,32 @@
 		  <QueryName condition="end with">.kaspersky.com</QueryName>
 		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
         </Rule>
-		   <Rule groupRelation="and">
+	<Rule groupRelation="and">
+          <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avp.exe</Image>
+          <QueryName condition="end with">.msftconnecttest.com</QueryName>
+		  <QueryName condition="end with">.kaspersky.com</QueryName>
+		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
+        </Rule>
+	<Rule groupRelation="and">
           <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpsus.exe</Image>
+          <QueryName condition="end with">.msftconnecttest.com</QueryName>
+		  <QueryName condition="end with">.kaspersky.com</QueryName>
+		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
+        </Rule>
+	<Rule groupRelation="and">
+          <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpsus.exe</Image>
+          <QueryName condition="end with">.msftconnecttest.com</QueryName>
+		  <QueryName condition="end with">.kaspersky.com</QueryName>
+		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
+        </Rule>
+	<Rule groupRelation="and">
+          <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpui.exe</Image>
+          <QueryName condition="end with">.msftconnecttest.com</QueryName>
+		  <QueryName condition="end with">.kaspersky.com</QueryName>
+		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
+        </Rule>
+	<Rule groupRelation="and">
+          <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpui.exe</Image>
           <QueryName condition="end with">.msftconnecttest.com</QueryName>
 		  <QueryName condition="end with">.kaspersky.com</QueryName>
 		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
@@ -2304,13 +2331,13 @@
         <QueryName condition="is">crl.verisign.com</QueryName>
         <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</Image>
 		<QueryName condition="end with">.kaspersky-labs.com</QueryName>
-        <QueryName condition="end with">.kaspersky.com</QueryName>
-		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES12.2.0\avp.exe</Image>
+        	<QueryName condition="end with">.kaspersky.com</QueryName>
+	<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES12.2.0\avp.exe</Image>
 		<QueryName condition="end with">.kaspersky-labs.com</QueryName>
-        <QueryName condition="end with">.kaspersky.com</QueryName>
-		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES12.1.0\avp.exe</Image>
-        <QueryName condition="end with">.kaspersky-labs.com</QueryName>
-        <QueryName condition="end with">.kaspersky.com</QueryName>
+        	<QueryName condition="end with">.kaspersky.com</QueryName>
+	<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES12.1.0\avp.exe</Image>
+        	<QueryName condition="end with">.kaspersky-labs.com</QueryName>
+        	<QueryName condition="end with">.kaspersky.com</QueryName>
         <Image condition="contains all">C:\Windows\SystemApps\Microsoft.Windows.Search;SearchApp.exe</Image>
       </DnsQuery>
     </RuleGroup>
@@ -2328,6 +2355,12 @@
     <RuleGroup groupRelation="or">
       <ProcessTampering onmatch="exclude">
         <Image condition="is">C:\Program Files\Mozilla Firefox\firefox.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpui.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpsus.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avp.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpui.exe</Image>
+	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpsus.exe</Image>
         <Image condition="is">C:\Program Files\Mozilla Firefox\updater.exe</Image>
         <Image condition="is">C:\Program Files\Mozilla Firefox\default-browser-agent.exe</Image>
         <Image condition="is">C:\Program Files\Mozilla Firefox\pingsender.exe</Image>
