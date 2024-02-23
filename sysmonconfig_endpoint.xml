@@ -497,9 +497,6 @@
           <ParentImage condition="is">"C:\Program Files\Microsoft Monitoring Agent\Agent\MonitoringHost.exe"</ParentImage>
           <CommandLine condition="is">"C:\Windows\system32\cscript.exe" /nologo "MonitorKnowledgeDiscovery.vbs"</CommandLine>
         </Rule>
-        <ParentImage condition="end with">C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnagent.exe</ParentImage>
-        <Image condition="begin with">C:\program files (x86)\desktopcentral_agent\bin\</Image>
-        <Image condition="begin with">C:\program files\desktopcentral_server\bin\</Image>
         <CommandLine condition="begin with">C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngen.exe</CommandLine>
         <Image condition="is">C:\Windows\Microsoft.NET\Framework64\v4.0.30319\mscorsvw.exe</Image>
         <Image condition="is">C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorsvw.exe</Image>
@@ -510,18 +507,15 @@
         <ParentImage condition="is">C:\Windows\Microsoft.NET\Framework64\v4.0.30319\ngentask.exe</ParentImage>
         <ParentImage condition="is">C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorsvw.exe</ParentImage>
         <ParentImage condition="is">C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngentask.exe</ParentImage>
-        <ParentImage condition="is">C:\Windows\Microsoft.NET\Framework\v4.0.30319\ngentask.exe</ParentImage>
+        <ParentImage condition="is">C:\Program Files\Mozilla Firefox\firefox.exe</ParentImage>
         <Image condition="begin with">C:\Program Files\NVIDIA Corporation\</Image>
         <Image condition="begin with">C:\Program Files\Realtek\</Image>
         <ParentImage condition="end with">C:\Program Files\Realtek\Audio\HDA\RtkAudioService64.exe</ParentImage>
-        <ParentImage condition="end with">C:\Program Files (x86)\Dropbox\Update\DropboxUpdate.exe</ParentImage>
         <CommandLine condition="begin with">"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --type=</CommandLine>
         <CommandLine condition="begin with">"C:\Program Files\Google\Chrome\Application\chrome.exe" --type=</CommandLine>
         <Image condition="begin with">C:\Program Files (x86)\Google\Update\</Image>
+		<Image condition="begin with">C:\Program Files (x86)\Microsoft\EdgeUpdate\</Image>
         <ParentImage condition="begin with">C:\Program Files (x86)\Google\Update\</ParentImage>
-        <Image condition="is">C:\Program Files\Malwarebytes\Anti-Malware\mbam.exe</Image>
-        <Image condition="is">C:\Program Files\Malwarebytes\Anti-Malware\mbamservice.exe</Image>
-        <Image condition="is">C:\Program Files\Malwarebytes\Anti-Malware\mbamtray.exe</Image>
         <Image condition="is">C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe</Image>
         <ParentImage condition="end with">C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe</ParentImage>
         <ParentImage condition="is">C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe</ParentImage>
@@ -595,15 +589,9 @@
         <CommandLine condition="is">C:\Windows\system32\svchost.exe -k wsappx</CommandLine>
         <ParentCommandLine condition="is">C:\Windows\system32\svchost.exe -k netsvcs</ParentCommandLine>
         <ParentCommandLine condition="is">C:\Windows\system32\svchost.exe -k localSystemNetworkRestricted</ParentCommandLine>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avp.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avpui.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avpsus.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avp.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpui.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpsus.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagchk.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klmover.exe</Image>
+        <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES.12.;.0\;.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\;\;.exe</Image>
+        <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\;.exe</Image>
         <Image condition="begin with">C:\Program Files\Windows Defender\</Image>
         <Image condition="is">C:\Windows\system32\MpSigStub.exe</Image>
         <Image condition="begin with">C:\Windows\SoftwareDistribution\Download\Install\AM_</Image>
@@ -654,6 +642,7 @@
         <Image name="technique_id=T1021,technique_name=Remote Services" condition="image">vnc.exe</Image>
         <Image name="technique_id=T1021,technique_name=Remote Services" condition="image">vncviewer.exe</Image>
         <Image name="technique_id=T1021,technique_name=Remote Services" condition="image">vncservice.exe</Image>
+		<Image name="technique_id=T1021,technique_name=Remote Services" condition="image">teamviewer.exe</Image>
         <Image name="technique_id=T1569.002,technique_name=Service Execution" condition="image">winexesvc.exe</Image>
         <Image name="technique_id=T1197,technique_name=BITS Jobs" condition="image">bitsadmin.exe</Image>
         <DestinationPort name="technique_id=T1571,technique_name=Non-Standard Port" condition="is">4444</DestinationPort>
@@ -835,15 +824,20 @@
         <Image condition="end with">AppData\Local\Viber\Viber.exe</Image>
         <Image condition="end with">winlogbeat.exe</Image>
         <Image condition="end with">packetbeat.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avp.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avpui.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\avpsus.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagchk.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klmover.exe</Image>
-	<Image condition="contains all">C:\Users\;\AppData\Roaming\Zoom\bin\Zoom.exe</Image>
-	<Image condition="contains all">C:\Users\;\AppData\Local\Viber\Viber.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\AnyDesk\AnyDesk.exe</Image>
+		<Image condition="end with">avp.exe</Image>
+		<Image condition="end with">avpui.exe</Image>
+		<Image condition="end with">avpsus.exe</Image>
+		<Image condition="end with">klnagent.exe</Image>
+		<Image condition="end with">klnagchk.exe</Image>
+		<Image condition="end with">klmover.exe</Image>
+		<Image condition="end with">Up2Date.exe</Image>
+        <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\;\;.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES12.;.0\;.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\;.exe</Image>
+		<Image condition="contains all">C:\Users\;\AppData\Roaming\Zoom\bin\Zoom.exe</Image>
+		<Image condition="contains all">C:\Users\;\AppData\Local\Viber\Viber.exe</Image>
+		<Image condition="is">C:\Program Files (x86)\AnyDesk\AnyDesk.exe</Image>
+		<Image condition="is">C:\Windows\SysWOW64\vmnat.exe</Image>
         <Rule groupRelation="and">
           <Image condition="is">C:\Windows\System32\lsass.exe</Image>
           <DestinationPort condition="is">88</DestinationPort>
@@ -851,7 +845,7 @@
         <Image condition="image">OneDrive.exe</Image>
         <Image condition="image">OneDriveStandaloneUpdater.exe</Image>
         <Image condition="end with">AppData\Roaming\Viber\Viber.exe</Image>
-	<Image condition="end with">AppData\Roaming\Zoom\Zoom.exe</Image>
+		<Image condition="end with">AppData\Roaming\Zoom\Zoom.exe</Image>
         <Image condition="end with">AppData\Local\SynologyDrive\SynologyDrive.app\bin\cloud-drive-ui.exe</Image>
         <Image condition="end with">AppData\Local\SynologyDrive\SynologyDrive.app\bin\cloud-drive-daemon.exe</Image>
         <DestinationHostname condition="end with">.windowsupdate.microsoft.com</DestinationHostname>
@@ -1199,14 +1193,14 @@
         <SourceImage condition="is">C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\Acrobat.exe</SourceImage>
         <SourceImage condition="is">C:\Program Files (x86)\Adobe\Acrobat DC\Acrobat\AcroCEF\AcroCEF.exe</SourceImage>
         <SourceImage condition="is">C:\Program Files (x86)\Common Files\Adobe\ARM\1.0\AdobeARMHelper.exe</SourceImage>
-	<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</SourceImage>
-	<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avp.exe</SourceImage>
-	<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</SourceImage>
-	<SourceImage condition="is">C:\Windows\System32\DriverStore\FileRepository\ibmpmdrv.inf_amd64_02d728b29c6492d3\x64\ibmpmsvc.exe</SourceImage>
-	<SourceImage condition="contains all">C:\temp\VMware\vmware.exe</SourceImage>
-	<SourceImage condition="contains all">C:\temp\VMware\vmware-unity-helper.exe</SourceImage>
-	<SourceImage condition="contains all">C:\Users\;\AppData\Roaming\Zoom\bin\Zoom.exe</SourceImage>
-	<SourceImage condition="contains all">C:\Users\;\AppData\Local\Viber\Viber.exe</SourceImage>
+		<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\;\;.exe</SourceImage>
+		<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES.12.;.0\;.exe</SourceImage>
+		<SourceImage condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\;.exe</SourceImage>
+		<SourceImage condition="is">C:\Windows\System32\DriverStore\FileRepository\ibmpmdrv.inf_amd64_02d728b29c6492d3\x64\ibmpmsvc.exe</SourceImage>
+		<SourceImage condition="contains all">C:\temp\VMware\vmware.exe</SourceImage>
+		<SourceImage condition="contains all">C:\temp\VMware\vmware-unity-helper.exe</SourceImage>
+		<SourceImage condition="contains all">C:\Users\;\AppData\Roaming\Zoom\bin\Zoom.exe</SourceImage>
+		<SourceImage condition="contains all">C:\Users\;\AppData\Local\Viber\Viber.exe</SourceImage>
         <Rule name="Exclude Chrome SW Reporter into Reporter" groupRelation="and">
           <SourceImage condition="image">software_reporter_tool.exe</SourceImage>
           <TargetImage condition="image">software_reporter_tool.exe</TargetImage>
@@ -1236,8 +1230,6 @@
         <GrantedAccess>0x1400</GrantedAccess>
         <GrantedAccess>0x101400</GrantedAccess>
         <GrantedAccess>0x101000</GrantedAccess>
-        <SourceImage condition="is">C:\Program Files\McAfee\Endpoint Security\Endpoint Security Platform\mfeesp.exe</SourceImage>
-        <SourceImage condition="is">C:\Program Files\McAfee\Agent\x86\macompatsvc.exe</SourceImage>
         <SourceImage condition="contains all">C:\Users\;\AppData\Local\Microsoft\OneDrive\StandaloneUpdater\OneDriveSetup.exe</SourceImage>
         <SourceImage condition="is">C:\Program Files\Microsoft Office\root\Office16\OUTLOOK.EXE</SourceImage>
         <SourceImage condition="is">C:\Program Files\PowerToys\modules\KeyboardManager\KeyboardManagerEngine\PowerToys.KeyboardManagerEngine.exe</SourceImage>
@@ -1278,9 +1270,6 @@
         <TargetFilename name="technique_id=T1059,technique_name=Command and Scripting Interpreter" condition="end with">.chm</TargetFilename>
         <TargetFilename condition="contains all">C:\Users\;\.azure\accesstokens.json</TargetFilename>
         <TargetFilename condition="contains all">C:\Users\;\.aws\credentials</TargetFilename>
-        <TargetFilename condition="contains all">C:\Users\;\config\gcloud</TargetFilename>
-        <TargetFilename condition="contains all">C:\Users\;\.alibabacloud\credentials</TargetFilename>
-        <TargetFilename condition="contains all">C:\Users\;\.kube\config</TargetFilename>
         <TargetFilename condition="contains all">C:\Users\;\.ssh\</TargetFilename>
         <Rule groupRelation="and">
           <Image condition="end with">\WINWORD.EXE</Image>
@@ -1301,23 +1290,8 @@
         <TargetFilename condition="begin with">C:\Windows\SysWOW64\Drivers</TargetFilename>
         <Rule groupRelation="and">
           <TargetFilename condition="end with">.js</TargetFilename>
-          <TargetFilename condition="contains">Appdata\Local\whatsapp\</TargetFilename>
-          <Image condition="excludes">Appdata\Local\whatsapp\</Image>
-        </Rule>
-        <Rule groupRelation="and">
-          <TargetFilename condition="end with">.js</TargetFilename>
           <TargetFilename condition="contains">Appdata\Local\Microsoft\Teams\</TargetFilename>
           <Image condition="excludes">Appdata\Local\Microsoft\Teams\</Image>
-        </Rule>
-        <Rule groupRelation="and">
-          <TargetFilename condition="end with">.js</TargetFilename>
-          <TargetFilename condition="contains">Appdata\Local\slack\</TargetFilename>
-          <Image condition="excludes">Appdata\Local\slack\</Image>
-        </Rule>
-        <Rule groupRelation="and">
-          <TargetFilename condition="end with">.js</TargetFilename>
-          <TargetFilename condition="contains">Appdata\Local\discord\</TargetFilename>
-          <Image condition="excludes">Appdata\Local\discord\</Image>
         </Rule>
         <Rule groupRelation="and">
           <TargetFilename condition="end with">.js</TargetFilename>
@@ -1422,9 +1396,20 @@
           <Image condition="begin with">C:\Program Files\Elastic\Agent\data\</Image>
           <TargetFilename condition="contains all">C:\Program Files\Elastic\Agent\data\;.ndjson</TargetFilename>
         </Rule>
+		<Rule groupRelation="and">
+          <Image condition="begin with">C:\Program Files\Notepad++\</Image>
+          <TargetFilename condition="contains all">C:\temp\sysmon\sysmonconfig_endpoint.xml</TargetFilename>
+        </Rule>
+		<Rule groupRelation="and">
+          <Image condition="begin with">C:\Program Files (x86)\Kaspersky Lab\KES.;.;.;\</Image>
+          <TargetFilename condition="contains all">C:\ProgramData\Kaspersky Lab\KES.;.;\Temp\tempio\;-;-;-;-;.lnk</TargetFilename>
+        </Rule>
+		<Rule groupRelation="and">
+          <Image condition="begin with">C:\Program Files\Mozilla Firefox\</Image>
+          <TargetFilename condition="contains all">C:\Users\;\AppData\Roaming\Mozilla\Firefox\Profiles\;.;-;\prefs-;.js</TargetFilename>
+        </Rule>
+		<Image condition="is">\AppData\Roaming\Mozilla\Firefox\Profiles\;.default-release\prefs-;.js</Image>
         <Image condition="is">C:\Windows\system32\igfxCUIService.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\Ivanti\Workspace Control\pfwsmgr.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\RES Software\Workspace Manager\pfwsmgr.exe</Image>
         <Image condition="is">C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe</Image>
         <TargetFilename condition="contains all">C:\Windows\Prefetch;.pf</TargetFilename>
         <Image condition="is">C:\Windows\System32\smss.exe</Image>
@@ -1433,7 +1418,11 @@
         <TargetFilename condition="begin with">C:\Windows\System32\DriverStore\Temp\</TargetFilename>
         <TargetFilename condition="begin with">C:\Windows\System32\wbem\Performance\</TargetFilename>
         <TargetFilename condition="end with">WRITABLE.TST</TargetFilename>
-        <TargetFilename condition="contains">\AppData\Roaming\Microsoft\Windows\Recent\</TargetFilename>
+        <TargetFilename condition="contains">\AppData\Roaming\Microsoft\Office\Recent\</TargetFilename>
+		<TargetFilename condition="contains">\AppData\Roaming\Microsoft\Windows\Recent\</TargetFilename>
+		<TargetFilename condition="contains">\AppData\Roaming\Microsoft\Word\</TargetFilename>
+		<TargetFilename condition="contains">\AppData\Roaming\Microsoft\Excel\</TargetFilename>
+		<TargetFilename condition="contains">\AppData\Roaming\Microsoft\PowerPoint\</TargetFilename>
         <TargetFilename condition="begin with">C:\$WINDOWS.~BT\Sources\SafeOS\SafeOS.Mount\</TargetFilename>
         <Image condition="begin with">C:\WINDOWS\winsxs\amd64_microsoft-windows</Image>
         <Image condition="is">c:\Program Files\Microsoft Security Client\MsMpEng.exe</Image>
@@ -1623,31 +1612,31 @@
         <TargetObject name="technique_id=T1546.015,technique_name=Component Object Model Hijacking" condition="contains">software\classes\clsid\{7ed96837-96f0-4812-b211-f13c24117ed3}\instance</TargetObject>
         <Rule groupRelation="and">
           <TargetObject name="technique_id=T1125,technique_name=Video Capture" condition="contains">\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\webcam</TargetObject>
-          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;slack\slack.exe;Mozilla Firefox\firefox.exe</Image>
+          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;Mozilla Firefox\firefox.exe</Image>
         </Rule>
         <Rule groupRelation="and">
           <TargetObject name="technique_id=T1123,technique_name=Audio Capture" condition="contains">\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\microphone</TargetObject>
-          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;slack\slack.exe;Mozilla Firefox\firefox.exe</Image>
+          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;Mozilla Firefox\firefox.exe</Image>
         </Rule>
         <Rule groupRelation="and">
           <TargetObject name="technique_id=T1123,technique_name=Audio Capture" condition="contains">\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\bluetooth</TargetObject>
-          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;slack\slack.exe;Mozilla Firefox\firefox.exe</Image>
+          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;Mozilla Firefox\firefox.exe</Image>
         </Rule>
         <Rule groupRelation="and">
           <TargetObject name="technique_id=T1005,technique_name=Data from Local System" condition="contains">\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\usb</TargetObject>
-          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;slack\slack.exe;Mozilla Firefox\firefox.exe</Image>
+          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;Mozilla Firefox\firefox.exe</Image>
         </Rule>
         <Rule groupRelation="and">
           <TargetObject name="technique_id=T1005,technique_name=Data from Local System" condition="contains">\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\location</TargetObject>
-          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;slack\slack.exe;Mozilla Firefox\firefox.exe</Image>
+          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;Mozilla Firefox\firefox.exe</Image>
         </Rule>
         <Rule groupRelation="and">
           <TargetObject name="technique_id=T1005,technique_name=Data from Local System" condition="contains">\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\contacts</TargetObject>
-          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;slack\slack.exe;Mozilla Firefox\firefox.exe</Image>
+          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;Mozilla Firefox\firefox.exe</Image>
         </Rule>
         <Rule groupRelation="and">
           <TargetObject name="technique_id=T1056.001,technique_name=Input Capture - Keylogging" condition="contains">\SOFTWARE\Microsoft\Windows\CurrentVersion\CapabilityAccessManager\ConsentStore\humanInterfaceDevice</TargetObject>
-          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;slack\slack.exe;Mozilla Firefox\firefox.exe</Image>
+          <Image condition="excludes any">Google\Chrome\Application\chrome.exe;Zoom\bin\Zoom.exe;Mozilla Firefox\firefox.exe</Image>
         </Rule>
         <TargetObject condition="begin with">HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\Credential Provider</TargetObject>
         <TargetObject condition="begin with">HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\Plap Providers</TargetObject>
@@ -1781,11 +1770,16 @@
     <!-- Event ID 12,13,14 == RegObject added/deleted, RegValue Set, RegObject Renamed - Excludes -->
     <RuleGroup groupRelation="or">
       <RegistryEvent onmatch="exclude">
-        <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</Image>
-		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</Image>
+        <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES.12.;.0\;.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\;.exe</Image>
+		<Image condition="contains all">C:\Windows\System32\DriverStore\FileRepository\;\x64\ibmpmsvc.exe</Image>
+		<Image condition="contains all">C:\Program Files\WindowsApps\;\HxTsr.exe</Image>
         <Image condition="contains all">C:\Users\;\AppData\\Roaming\Zoom\bin\Zoom.exe</Image>
-		<Image condition="is">C:\Windows\System32\DriverStore\FileRepository\ibmpmdrv.inf_amd64_02d728b29c6492d3\x64\ibmpmsvc.exe</Image>
+		<Image condition="is">C:\Windows\SystemApps\Microsoft.Windows.;\SecHealthUI.exe</Image>
+		<Image condition="is">C:\Program Files\WindowsApps\;\ScreenSketch.exe</Image>
         <Image condition="contains all">C:\Users\;\AppData\Local\Viber\Viber.exe</Image>
+		<Image condition="contains all">C:\temp\sysmon\Sysmon64.exe</Image>
+		<Image condition="contains all">C:\Users\Downloads\Sysmon\Sysmon64.exe</Image>
         <Rule groupRelation="and">
           <Image condition="image">svchost.exe</Image>
           <TargetObject condition="begin with">HKLM\System\CurrentControlSet\Services\Tcpip\Parameters\DNSRegisteredAdapters</TargetObject>
@@ -1799,8 +1793,6 @@
         <TargetObject condition="end with">Toolbar\ShellBrowser\ITBar7Layout</TargetObject>
         <TargetObject condition="end with">Internet Explorer\Toolbar\Locked</TargetObject>
         <TargetObject condition="end with">ShellBrowser</TargetObject>
-        <Image condition="is">C:\Program Files (x86)\Ivanti\Workspace Control\pfwsmgr.exe</Image>
-        <Image condition="is">C:\Program Files\RES Software\Workspace Manager\pfwsmgr.exe</Image>
         <Image condition="begin with">C:\Program Files (x86)\Kaspersky Lab </Image>
         <Image condition="begin with">C:\Program Files\Kaspersky Lab </Image>
         <Image condition="is">C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe</Image>
@@ -1813,13 +1805,10 @@
         <TargetObject condition="contains">\{CAFEEFAC-</TargetObject>
         <EventType condition="is">CreateKey</EventType>
         <TargetObject condition="begin with">HKLM\COMPONENTS</TargetObject>
-        <Image condition="is">C:\Program Files\ownCloud\owncloud.exe</Image>
-        <Image condition="is">C:\Program Files (x86)\ownCloud\owncloud.exe</Image>
         <Rule groupRelation="and">
           <Image condition="image">svchost.exe</Image>
           <TargetObject condition="begin with">HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Schedule\TaskCache\Tasks</TargetObject>
         </Rule>
-        <Image condition="begin with">C:\Program Files\SentinelOne\Sentinel Agent</Image>
         <Image condition="is">System</Image>
         <Rule groupRelation="and">
           <Image condition="is">C:\Program Files\VMware\VMware Tools\vmtoolsd.exe</Image>
@@ -1844,6 +1833,8 @@
         <Image condition="is">C:\WINDOWS\system32\backgroundTaskHost.exe</Image>
         <Image condition="is">C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeClickToRun.exe</Image>
         <Image condition="is">C:\Program Files\Windows Defender\MsMpEng.exe</Image>
+		<Image condition="is">C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe</Image>
+		<Image condition="is">C:\Program Files\Mozilla Firefox\firefox.exe</Image>
         <Image condition="is">C:\Windows\SystemApps\Microsoft.Windows.Cortana_cw5n1h2txyewy\SearchUI.exe</Image>
         <Image condition="is">C:\Program Files\Microsoft Application Virtualization\Client\AppVClient.exe</Image>
         <TargetObject condition="end with">\CurrentVersion\App Paths</TargetObject>
@@ -2052,6 +2043,10 @@
 		  <PipeName condition="begin with">\Zoom.com.zoom.ipc.confapp_</PipeName>
 		</Rule>
 		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files\WindowsApps\;\Skype\Skype.exe</Image>
+		  <PipeName condition="begin with">\uv</PipeName>
+		</Rule>
+		<Rule groupRelation="and">
           <Image condition="contains all">C:\Program Files;\Mozilla Firefox\firefox.exe</Image>
           <PipeName condition="begin with">\gecko-crash-server-pipe.</PipeName>
         </Rule>
@@ -2079,7 +2074,24 @@
           <Image condition="contains all">C:\Windows\system32\sihost.exe</Image>
           <PipeName condition="begin with">\AppContracts_</PipeName>
         </Rule>
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files\Tenable\Nessus Agent\nessusd.exe</Image>
+          <PipeName condition="begin with">\nmh_msg_bus.</PipeName>
+        </Rule>
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Windows\Lenovo\ImController\Service\Lenovo.Modern.ImController.exe</Image>
+          <PipeName condition="begin with">\pipe_</PipeName>
+        </Rule>
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files\OpenVPN Connect\OpenVPNConnect.exe</Image>
+          <PipeName condition="begin with">\uv</PipeName>
+        </Rule>
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Windows\Lenovo\;\;\;.exe</Image>
+          <PipeName condition="begin with">\pipe_</PipeName>
+        </Rule>
         <PipeName condition="is">\SQLLocal\MSSQLSERVER</PipeName>
+		<PipeName condition="is">\PSHost.;.;.DefaultAppDomain.powershell</PipeName>
         <PipeName condition="is">\SQLLocal\INSTANCE01</PipeName>
         <PipeName condition="is">\SQLLocal\SQLEXPRESS</PipeName>
         <PipeName condition="is">\SQLLocal\COMMVAULT</PipeName>
@@ -2114,6 +2126,8 @@
         <QueryName condition="end with">.adadvisor.net</QueryName>
         <QueryName condition="end with">.adap.tv</QueryName>
         <QueryName condition="end with">.addthis.com</QueryName>
+		<QueryName condition="end with">.asana.com</QueryName>
+		<QueryName condition="end with">.sync.app.asana.com</QueryName>
         <QueryName condition="end with">.adform.net</QueryName>
         <QueryName condition="end with">.adnxs.com</QueryName>
         <QueryName condition="end with">.adroll.com</QueryName>
@@ -2143,6 +2157,8 @@
         <QueryName condition="end with">.google-analytics.com</QueryName>
         <QueryName condition="end with">.googleadservices.com</QueryName>
         <QueryName condition="end with">.googlesyndication.com</QueryName>
+		<QueryName condition="end with">.google.com</QueryName>
+		<QueryName condition="end with">.gmail.com</QueryName>
         <QueryName condition="end with">.googletagmanager.com</QueryName>
         <QueryName condition="end with">.googlevideo.com</QueryName>
         <QueryName condition="end with">.gstatic.com</QueryName>
@@ -2166,8 +2182,9 @@
         <QueryName condition="end with">.pubmatic.com</QueryName>
         <QueryName condition="end with">.quantcount.com</QueryName>
         <QueryName condition="end with">.quantserve.com</QueryName>
-	<QueryName condition="end with">.rebisco.com</QueryName>
-	<QueryName condition="end with">.rebisco.com.ph</QueryName>
+		<QueryName condition="end with">.rebisco.com</QueryName>
+		<QueryName condition="end with">.rebmain.com</QueryName>
+		<QueryName condition="end with">.rebisco.com.ph</QueryName>
         <QueryName condition="end with">.revsci.net</QueryName>
         <QueryName condition="end with">.rfihub.net</QueryName>
         <QueryName condition="end with">.rlcdn.com</QueryName>
@@ -2192,11 +2209,14 @@
         <QueryName condition="end with">.twimg.com</QueryName>
         <QueryName condition="end with">.tynt.com</QueryName>
         <QueryName condition="end with">.w55c.net</QueryName>
-        <QueryName condition="end with">.ytimg.com</QueryName>
+        <QueryName condition="end with">.yahoo.com</QueryName>
+		<QueryName condition="end with">.youtube.com</QueryName>
+		<QueryName condition="end with">.ytimg.com</QueryName>
         <QueryName condition="end with">.zorosrv.com</QueryName>
         <QueryName condition="is">1rx.io</QueryName>
-	<QueryName condition="is">rebisco.com</QueryName>
-	<QueryName condition="is">rebisco.com.ph</QueryName>
+		<QueryName condition="is">rebisco.com</QueryName>
+		<QueryName condition="is">rebisco.rebmain.com</QueryName>
+		<QueryName condition="is">rebisco.com.ph</QueryName>
         <QueryName condition="is">adservice.google.com</QueryName>
         <QueryName condition="is">ampcid.google.com</QueryName>
         <QueryName condition="is">clientservices.googleapis.com</QueryName>
@@ -2234,46 +2254,47 @@
         <QueryName condition="end with">.localmachine</QueryName>
         <QueryName condition="is">localhost</QueryName>
         <Rule groupRelation="and">
-          <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</Image>
-          <QueryName condition="end with">.msftconnecttest.com</QueryName>
-		  <QueryName condition="end with">.kaspersky.com</QueryName>
-		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
+          <Image condition="contains">C:\Program Files\Mozilla Firefox\firefox.exe</Image>
+          <QueryName condition="end with">.google.com</QueryName>
+		  <QueryName condition="end with">.gmail.com</QueryName>
+		  <QueryName condition="end with">.yahoo.com</QueryName>
         </Rule>
-	<Rule groupRelation="and">
-          <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avp.exe</Image>
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES12.;.0\;.exe</Image>
           <QueryName condition="end with">.msftconnecttest.com</QueryName>
 		  <QueryName condition="end with">.kaspersky.com</QueryName>
 		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
+		  <QueryName condition="end with">.localmachine</QueryName>
+		  <QueryName condition="end with">.google.com</QueryName>
+		  <QueryName condition="end with">.ksn.kaspersky-labs.com</QueryName>
+		  <QueryName condition="end with">.azurefd.us</QueryName>
         </Rule>
-	<Rule groupRelation="and">
-          <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpsus.exe</Image>
+		 <Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\;\;.exe</Image>
           <QueryName condition="end with">.msftconnecttest.com</QueryName>
 		  <QueryName condition="end with">.kaspersky.com</QueryName>
 		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
+		  <QueryName condition="end with">.localmachine</QueryName>
+		  <QueryName condition="end with">.google.com</QueryName>
+		  <QueryName condition="end with">.ksn.kaspersky-labs.com</QueryName>
+		  <QueryName condition="end with">.azurefd.us</QueryName>
         </Rule>
-	<Rule groupRelation="and">
-          <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpsus.exe</Image>
+		<Rule groupRelation="and">
+          <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\;.exe</Image>
           <QueryName condition="end with">.msftconnecttest.com</QueryName>
 		  <QueryName condition="end with">.kaspersky.com</QueryName>
 		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
-        </Rule>
-	<Rule groupRelation="and">
-          <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpui.exe</Image>
-          <QueryName condition="end with">.msftconnecttest.com</QueryName>
-		  <QueryName condition="end with">.kaspersky.com</QueryName>
-		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
-        </Rule>
-	<Rule groupRelation="and">
-          <Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpui.exe</Image>
-          <QueryName condition="end with">.msftconnecttest.com</QueryName>
-		  <QueryName condition="end with">.kaspersky.com</QueryName>
-		  <QueryName condition="end with">.kaspersky-labs.com</QueryName>
+		  <QueryName condition="end with">.localmachine</QueryName>
+		  <QueryName condition="end with">.google.com</QueryName>
+		  <QueryName condition="end with">.ksn.kaspersky-labs.com</QueryName>
+		  <QueryName condition="end with">.azurefd.us</QueryName>
         </Rule>
         <Image condition="is">C:\Program Files\Windows Defender Advanced Threat Protection\MsSense.exe</Image>
         <QueryName condition="end with">-pushp.svc.ms</QueryName>
         <QueryName condition="end with">.b-msedge.net</QueryName>
         <QueryName condition="end with">.bing.com</QueryName>
         <QueryName condition="end with">.hotmail.com</QueryName>
+		<QueryName condition="end with">.gmail.com</QueryName>
         <QueryName condition="end with">.live.com</QueryName>
         <QueryName condition="end with">.live.net</QueryName>
         <QueryName condition="end with">.s-microsoft.com</QueryName>
@@ -2284,12 +2305,16 @@
         <QueryName condition="end with">.msedge.net</QueryName>
         <QueryName condition="end with">.msn.com</QueryName>
         <QueryName condition="end with">.msocdn.com</QueryName>
+		<QueryName condition="end with">.rebmain.com</QueryName>
+		<QueryName condition="end with">.rebisco.com</QueryName>
+		<QueryName condition="end with">.rebmain.com.ph</QueryName>
         <QueryName condition="end with">.skype.com</QueryName>
         <QueryName condition="end with">.skype.net</QueryName>
         <QueryName condition="end with">.windows.com</QueryName>
         <QueryName condition="end with">.windows.net.nsatc.net</QueryName>
         <QueryName condition="end with">.windowsupdate.com</QueryName>
         <QueryName condition="end with">.xboxlive.com</QueryName>
+		<QueryName condition="end with">.yahoo.com</QueryName>
         <QueryName condition="is">login.windows.net</QueryName>
         <QueryName condition="is">outlook.office.com</QueryName>
         <QueryName condition="is">statics.teams.cdn.office.net</QueryName>
@@ -2329,16 +2354,11 @@
         <QueryName condition="is">subca.ocsp-certum.com</QueryName>
         <QueryName condition="is">cscasha2.ocsp-certum.com</QueryName>
         <QueryName condition="is">crl.verisign.com</QueryName>
-        <Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\klnagent.exe</Image>
-		<QueryName condition="end with">.kaspersky-labs.com</QueryName>
-        	<QueryName condition="end with">.kaspersky.com</QueryName>
-	<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES12.2.0\avp.exe</Image>
-		<QueryName condition="end with">.kaspersky-labs.com</QueryName>
-        	<QueryName condition="end with">.kaspersky.com</QueryName>
-	<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES12.1.0\avp.exe</Image>
-        	<QueryName condition="end with">.kaspersky-labs.com</QueryName>
-        	<QueryName condition="end with">.kaspersky.com</QueryName>
         <Image condition="contains all">C:\Windows\SystemApps\Microsoft.Windows.Search;SearchApp.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\;.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\KES12.;.0\;.exe</Image>
+		<Image condition="contains all">C:\Program Files (x86)\Kaspersky Lab\;\;.exe</Image>
+		<Image condition="contains all">\AppData\Roaming\Zoom\bin\Zoom.exe</Image>
       </DnsQuery>
     </RuleGroup>
     <!-- Event ID 23 == File Delete and overwrite events which saves a copy to the archivedir - Includes -->
@@ -2355,12 +2375,9 @@
     <RuleGroup groupRelation="or">
       <ProcessTampering onmatch="exclude">
         <Image condition="is">C:\Program Files\Mozilla Firefox\firefox.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avp.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpui.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.1.0\avpsus.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avp.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpui.exe</Image>
-	<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.2.0\avpsus.exe</Image>
+		<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\KES.12.;.0\;.exe</Image>
+		<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\NetworkAgent\;.exe</Image>
+		<Image condition="is">C:\Program Files (x86)\Kaspersky Lab\;\;.exe</Image>
         <Image condition="is">C:\Program Files\Mozilla Firefox\updater.exe</Image>
         <Image condition="is">C:\Program Files\Mozilla Firefox\default-browser-agent.exe</Image>
         <Image condition="is">C:\Program Files\Mozilla Firefox\pingsender.exe</Image>
@@ -2371,6 +2388,16 @@
         <Rule groupRelation="and">
           <Image condition="begin with">C:\Program Files (x86)\Microsoft\Edge\Application\</Image>
           <Image condition="end with">\BHO\ie_to_edge_stub.exe</Image>
+        </Rule>
+		<Rule groupRelation="and">
+          <Image condition="begin with">C:\Program Files (x86)\Kaspersky Lab\;\</Image>
+          <Image condition="end with">\avpui.exe</Image>
+		  <Image condition="end with">\avp.exe</Image>
+		  <Image condition="end with">\avpsus.exe</Image>
+		  <Image condition="end with">\klnagchk.exe</Image>
+		  <Image condition="end with">\klnagent.exe</Image>
+		  <Image condition="end with">\klmover.exe</Image>
+		  <Image condition="end with">\Up2Date.exe</Image>
         </Rule>
         <Rule groupRelation="and">
           <Image condition="begin with">C:\Program Files (x86)\Microsoft\Edge\Application\</Image>
@@ -2395,10 +2422,6 @@
         <Rule groupRelation="and">
           <TargetFilename condition="contains all">C:\PS-Transcripts\;PowerShell_transcript</TargetFilename>
           <TargetFilename condition="contains">.txt</TargetFilename>
-        </Rule>
-        <Rule groupRelation="and">
-          <TargetFilename condition="begin with">C:\Program Files\Qualys\QualysAgent</TargetFilename>
-          <TargetFilename condition="contains any">.com;.bat;.exe;.reg;.ps1;.vbs;.vba;.lnk;.doc;.xls;.hta;.bin;.7z;.dll;.xla;.cmd;.sh;.lnk;.pptm;.scr;.msi;.sct</TargetFilename>
         </Rule>
         <Rule groupRelation="and">
           <TargetFilename condition="contains">\Downloads\</TargetFilename>
